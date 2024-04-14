@@ -40,7 +40,14 @@ app.get("/tiktok", async (req, res) => {
     }
 });
 const key = "Nayan"; // Don't change the key
-const cookie = "1xVajW4TcH7QEANKuVux2InMywMqi5-ZhEoyOdKvptzdo8ItdzhO2rWiDugXiyvMHvqhOoths1n036I4WImxYCBG5ImyFn7Sy9iTW742Oqz9uKylci2Nk1pTDaCPfjGEGayzC-GjdYuHeGWaumqN5FKbyMCsvkeqM1TJmTPoT1RgUI1pX9rN6QdPo5kLoye3L08zQh2WFEdFtrMN33GKOMA"; // Paste your bing cookie here
+const cookies = ["1IRlgoKEzSo3vZ9zdt213jhcfS0jwbJnanp0QLq2gXC6fwgqLLIupsl4w_QHE5Znf1pOhJ57eBq3fEB8LskkhYbKoCeVLgkRGZ8InEQLuH-rlamehN_Z2rh4eV05oKOLsiHEqeaFB4WnfTYqavQvdn11yZqdiqkJEir5YbP-SCHsaR4nYXEuCwBlL0_fZXCANPFsQzDNPS9y8lqymIuAtLYVAOWOqwf5cZlnX8kuALHA", "1wWvu6_PD2zxb-S9vL1tES27U8-eGSo0S954C9MtNSAdYktZsy8pLtoo6uHC_ii61xQBYhWTTgKO2HziGxMs9ekY1wJUgcqRWuVJ_wXyvToX2a6jHOKlgBpTS5qny0Haom1iS2iKCFQ2c1L-Pez45IGzeM7O5aMCOekXRh8V_TfnlUBksJYPiugXiuR1GOCWrU60tVRAL_SRX873IwCYAHg"]; // Array of cookies
+
+function getRandomCookie() {
+    const randomIndex = Math.floor(Math.random() * cookies.length);
+    return cookies[randomIndex];
+}
+
+const cookie = getRandomCookie();
 
 // Define the route
 app.get('/bing', async (req, res) => {
