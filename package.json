@@ -18,6 +18,7 @@
     "rsnchat": "^4.0.1",
     "nayan-media-downloader": "^2.4.8",
     "nayan-server": "^2.4.2",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "qs": ""
   }
 }
