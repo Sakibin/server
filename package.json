@@ -15,6 +15,9 @@
     "chatgpt": "^5.2.5",
     "cheerio": "^1.0.0",
     "express": "^4.19.2",
-    "rsnchat": "^4.0.1"
+    "rsnchat": "^4.0.1",
+    "nayan-media-downloader": "^2.4.8",
+    "nayan-server": "^2.4.2",
+    "path": "^0.12.7"
   }
 }
