@@ -3,6 +3,7 @@ const { RsnChat } = require('rsnchat');
 const { alldown } = require('nayan-media-downloader');
 const { ephoto } = require('nayan-server');
 const axios = require('axios');
+const qs = require('qs');
 const app = express();
 const port = 3000;
 
@@ -12,21 +13,6 @@ const rsnchat = new RsnChat('rsnai_dc0AeSF1JUEOA8dPEOkupsKs');
 // Express route to handle GPT-4 requests
 
 app.get('/', (req, res) => res.send('Yahuuuuuuuu, Sakibin here broooo.'));
-
-app.get('/alldl', async (req, res) => {
-    const url = req.query.url;
-
-    if (!url) {
-        return res.status(400).send('Please provide a URL as a query parameter.');
-    }
-
-    try {
-        const data = await alldown(url);
-        res.json(data);
-    } catch (error) {
-        res.status(500).send('Error processing the request');
-    }
-});
 
 
 app.get('/gpt4', async (req, res) => {
