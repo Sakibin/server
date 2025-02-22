@@ -8,7 +8,7 @@ const app = express();
 const port = 3000;
 
 // Initialize RSNChat with your API key
-const rsnchat = new RsnChat('rsnai_dc0AeSF1JUEOA8dPEOkupsKs');
+//const rsnchat = new RsnChat('rsnai_dc0AeSF1JUEOA8dPEOkupsKs');
 
 // Express route to handle GPT-4 requests
 
