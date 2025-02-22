@@ -1,7 +1,8 @@
 const express = require('express');
-const { RsnChat } = require('rsnchat');
-const { alldown } = require('nayan-media-downloader');
-const { ephoto } = require('nayan-server');
+//const { RsnChat } = require('rsnchat');
+//const { alldown } = require('nayan-media-downloader');
+
+const { ephoto } = require('nayan-apis-server');
 const axios = require('axios');
 const qs = require('qs');
 const app = express();
